@@ -18,9 +18,9 @@ contract SimpleToken is StandardToken {
   uint public decimals = 18;
   uint public INITIAL_SUPPLY = 10000;
   
-  function SimpleToken() {
+  function SimpleToken(address r) {
     totalSupply = INITIAL_SUPPLY;
-    balances[msg.sender] = INITIAL_SUPPLY;
+    balances[msg.sender] = INITIAL_SUPPLY;    
   }
 
 }
